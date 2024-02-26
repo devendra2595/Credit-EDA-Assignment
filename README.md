@@ -34,6 +34,102 @@ In this case study, used EDA to understand how consumer attributes and loan attr
 - 5) Analysis and Visualisation - Merged Data (Application data + Previous Application data)
 - 6) Recommendations and Conclusions
  
+# Steps:
+
+1) Understanding the data –
+imported the data and understood the variables with the help of column description 
+data.
+
+2) Basic Sanity checks –
+using info, shape, description commands to check the if the data is practically correct or 
+not. Eg. If any column related to time/day is negative then it is to be corrected to positive, 
+values exceeding the maximum permissible limit should be handled.
+
+3) Identifying and Imputing/Removing missing values OR removing entire column –
+checked the missing values with the help of “isna”, ”isnull” & sum or mean commands.
+• If more than 40% data is missing from a variable then dropped that variable
+• If less than 5% data is missing then the rows can be dropped but decided to ignore that values as data 
+was quite large
+• For missing data between 5% to 40%, if variable is categorical then checked if data is missing at random(in any specific pattern)
+then imputed the data with appropriate value or with mode and for numerical variable imputed with appropriate measure of central tendency.
+Note that we can even ignore the missing data in this category instead of imputing with the incorrect one.
+
+4) Dropping unnecessary/irrelevant variables -
+After observing the dataset and understanding the variables, we can drop the variables
+which does not have much relevance with the objective of case study. For this we can use our 
+domain knowledge along with data visualization.
+
+5) Identifying & Handling Outliers –
+Extreme values in a variable are called as outliers and it can be roughly observed with the 
+help of describe command and further confirmed by plotting distribution plot or box plot.
+Some outliers are due to data error (e.g. employment years = 1000) and some are practical 
+values. Depending on the variable and outliers we can either impute or remove the outliers, 
+  - bin them,
+  - cap the data to certain percentile. e.g 1st to 99th or 5th to 95th.
+  - use IQR to restrict the outliers.
+Removed the outliers which were due to data error 
+
+6) Standardizing Values –
+Using info command we can observe the datatypes. Ensure that numerical columns have 
+int or float datatype and categorical columns have categorical datatype. Changed the 
+datatype where ever required.
+
+7) Checking Data Imbalance –
+Data imbalance is checking the percentage positive & negative outcome of the target 
+variable in this case defaulters-1 & repayers-0.
+
+8) Univariate, Categorical/Numerical Univariate Analysis –
+Understanding each variable separately and wrt some category.
+In this case, we found out the count of customers in a specific category wrt TARGET 
+variable. We used pie chart, count plot, bar plot, distribution plot etc.
+
+9) Bivariate & Multivariate Analysis –
+Analyzing two or more variable at a time wrt target variable. The variables can be categorical 
+or numerical or mix of both.
+We used pairplot, boxplot, heatmaps, factorplot, bar plots etc.
+
+# Some of the Important insights from EDA:
+1) The number of female customers is almost double than number of male customers still the chances of male defaulting on a loan 
+is higher than that of female.
+
+![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/9f15a53a-8363-4b7f-8185-e71f206ec468)
+
+
+2) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/3ce907f7-141c-4c2d-9170-6ecb709451ff)
+
+- It is least risky for the bank to give loan to businessman and students(0 default rate).
+- Commercial associates, pensioner, state servant & working category fall under average rate of defaulting.
+- the customers who are on Maternity leave have the highest possibility of defaulting. This is obvious because the expenses 
+greatly increases in maternity period. Although, they have very low count as compared to other categories
+- The people who are unemployed have the second highest default rate
+
+
+3) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/9e8b4f42-5847-47c4-9947-d3033e09c56b)
+
+
+• Customers with academic degree have lowest rate of defaulting but the count is quite less as comparted to other categories.
+• Lower secondary category has highest default rate (around 11%).
+• secondary/secondary special have second highest default rate. they also contribute to the highest count.
+• To reduce the default rate, bank should focus on Incomplete higher, Lower secondary & secondary/secondary special category 
+customers as they have defaulting rate above avg(approx 8 %)
+
+4) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/bfc00d3a-b716-42e3-a037-000a10dd0a6e)
+
+Note: (ignoring the Unknown category)
+- Low-skilled Laborers have the highest defaulting rate (approx 17%) where as accountants have lowest defaulting rate (approx 5%).
+- Laborers contribute to highest count of customers with 10.6 % defaulting rate
+
+
+5) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/c9aa4a20-1cad-4256-a602-a270eca898bf)
+
+* As age increases the possibility of defaulting decreases.
+* Almost 50% customers belong to middle age category(40-60 years) who have default rate approx 7 %.
+* Although very young customers(20-25 years) does not contribute much to the total count still they have the highest possibility of defaulting (>12%)
+* Senior citizens are have lowest defaulting rate approx 5%.
+* If we consider 2 categories, middle and young (25-60 years), they contribute to almost 85% of customers and have default rate in range 7 to 10 %. mojority of customers fall under this category.
+* Young and middle age category affects the overall default rate.
+
+
 
 
 
