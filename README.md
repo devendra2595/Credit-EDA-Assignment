@@ -89,12 +89,14 @@ or numerical or mix of both.
 We used pairplot, boxplot, heatmaps, factorplot, bar plots etc.
 
 # Some of the Important insights from EDA:
-1) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/9f15a53a-8363-4b7f-8185-e71f206ec468)
+1)
+   ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/9f15a53a-8363-4b7f-8185-e71f206ec468)
 
 - The number of female customers is almost double than number of male customers still the chances of male defaulting on a loan 
 is higher than that of female.
 
-2) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/3ce907f7-141c-4c2d-9170-6ecb709451ff)
+2)
+   ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/3ce907f7-141c-4c2d-9170-6ecb709451ff)
 
 - It is least risky for the bank to give loan to businessman and students(0 default rate).
 - Commercial associates, pensioner, state servant & working category fall under average rate of defaulting.
@@ -103,7 +105,8 @@ greatly increases in maternity period. Although, they have very low count as com
 - The people who are unemployed have the second highest default rate
 
 
-3) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/9e8b4f42-5847-47c4-9947-d3033e09c56b)
+3)
+   ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/9e8b4f42-5847-47c4-9947-d3033e09c56b)
 
 
 • Customers with academic degree have lowest rate of defaulting but the count is quite less as comparted to other categories.
@@ -112,14 +115,16 @@ greatly increases in maternity period. Although, they have very low count as com
 • To reduce the default rate, bank should focus on Incomplete higher, Lower secondary & secondary/secondary special category 
 customers as they have defaulting rate above avg(approx 8 %)
 
-4) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/bfc00d3a-b716-42e3-a037-000a10dd0a6e)
+4)
+   ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/bfc00d3a-b716-42e3-a037-000a10dd0a6e)
 
 Note: (ignoring the Unknown category)
 - Low-skilled Laborers have the highest defaulting rate (approx 17%) where as accountants have lowest defaulting rate (approx 5%).
 - Laborers contribute to highest count of customers with 10.6 % defaulting rate
 
 
-5) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/c9aa4a20-1cad-4256-a602-a270eca898bf)
+5)
+   ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/c9aa4a20-1cad-4256-a602-a270eca898bf)
 
 * As age increases the possibility of defaulting decreases.
 * Almost 50% customers belong to middle age category(40-60 years) who have default rate approx 7 %.
