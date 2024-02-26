@@ -32,4 +32,63 @@ In this case study, used EDA to understand how consumer attributes and loan attr
 - 3) Data Visualisation (Application data)
 - 4) Data Exploration and Cleaning (Previous Application data)
 - 5) Analysis and Visualisation - Merged Data (Application data + Previous Application data)
-- 6) Conclusion
+- 6) Recommendations and Conclusions
+ 
+
+
+
+# Recommendations:
+
+- Its better to take extra precaution while approving loans to people with occupation Low-skill Laborers, 
+Cooking staff , Drivers, Laborers, Security staff, Waiters/barmen staff
+- People from organization type Transport: type 3 , Industry: type 13, Industry: type 8 have higher default 
+rate (more than 12%). Need to consider more factor while approving loan or provide loan with higher 
+interest rate to mitigate the risk of defaulting.
+- In each given contract status, below purpose of loans should be avoided or given with higher interest rate
+     - Refused loan- Money for a third person 
+     - Unused offer- Payment on the other loans
+     - Approved loan- Refusal to name the goal previously.
+     - Cancelled loan - Purchase of Electronic equipment.
+- If any customer had unused offer, then instead of lending the loan with the same offer, some reworking to be done in the loan offer after a certain period. IT staff is 35% likely to default if they opt for unused offer 
+loan.
+- It’s better to either avoid lending loan or lend loan at higher interest rate for below categories:
+     - Males with Salary range between 900K-1M with Secondary/Secondary special education(~30% default).
+     - Females with salary range between 400-500K with Lower secondary education(~50% default)
+
+# Conclusion :
+
+-  Factors which indicates if customer will default or not are:
+1. NAME_FAMILY_STATUS : Single people or who have civil marriage have higher default rate.
+2. NAME_INCOME_TYPE: Customers who are on Maternity leave or unemployed have higher default rate.
+3. NAME_EDUCATION_TYPE: Customers with Lower Secondary & Secondary education have higher default rate.
+4. OCCUPATION_TYPE: Low-skill Laborers, Cooking staff , Drivers, Laborers, Security staff, Waiters/barmen staff are 
+more likely to default (default rate more than 10%)
+5. ORGANIZATION_TYPE: People from Transport: type 3 , Industry: type 13, Industry: type 8 have higher default rate 
+(more than 12%) be approved for loan or provide loan with higher interest rate to mitigate the risk of defaulting.
+6. DAYS_BIRTH: Very young customers (age group of 20-25) have higher probability of defaulting
+7. DAYS_EMPLOYED: Customers with lesser work experience have high default rate.
+8. CNT_CHILDREN & CNT_FAM_MEMBERS: More number of family members(similar to more number of children) 
+are more likely to default
+9. AMT_GOODS_PRICE: When the credit amount goes beyond 3lakhs, there is an increase in defaulters.
+10. NAME_GOODS_CATEGORY: Customers who have taken loan for Vehicle or Insurance are most likely to default 
+around 10%
+11. CASH_LOAN_PURPOSE : Loan taken for buying a garage is most likely to be repaid
+
+
+- Factors which indicates if customer will repay or not are:
+1. CODE_GENDER: Female customers have lesser default rate than male customers (almost 3% lesser)
+2. NAME_EDUCATION_TYPE: Customers with Academic degree are less likely to defaults.
+3. NAME_INCOME_TYPE: Student and Businessmen have no defaults.
+4. ORGANIZATION_TYPE: Customers with Trade Type 4, Industry Type:12 and Transport : Type 1 have defaulted less 
+than 5%
+5. OCCUPATION_TYPE: Accountants are less likely to default
+6. DAYS_BIRTH: People above age of 60 have less probability of defaulting
+7. NAME_HOUSING_TYPE : Customers with office apartment are least likely to default
+8. DAYS_EMPLOYED: Customers with 25+ year experience(Expert category) are least likely to default
+9. AMT_INCOME_TOTAL: Customers with Income more than 700,000 are less likely to default
+10. AMT_CREDIT_RANGE : Customers with less than 100K or more than 1M loan amount are less likely to default
+11. CNT_FAM_MEMBERS : Customer with 4 or less family members are less likely to default.
+12. NAME_GOODS_CATEGORY: Customers who have taken loan for fitness or Tourism are least likely to default around 
+4%.
+13. CASH_LOAN_PURPOSE : The customers who refuse to name the purpose of loan are most likely to default
+
