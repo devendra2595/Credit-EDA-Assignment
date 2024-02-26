@@ -89,11 +89,10 @@ or numerical or mix of both.
 We used pairplot, boxplot, heatmaps, factorplot, bar plots etc.
 
 # Some of the Important insights from EDA:
-1) The number of female customers is almost double than number of male customers still the chances of male defaulting on a loan 
+1) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/9f15a53a-8363-4b7f-8185-e71f206ec468)
+
+- The number of female customers is almost double than number of male customers still the chances of male defaulting on a loan 
 is higher than that of female.
-
-![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/9f15a53a-8363-4b7f-8185-e71f206ec468)
-
 
 2) ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/3ce907f7-141c-4c2d-9170-6ecb709451ff)
 
