@@ -95,7 +95,8 @@ We used pairplot, boxplot, heatmaps, factorplot, bar plots etc.
 - The number of female customers is almost double than number of male customers still the chances of male defaulting on a loan 
 is higher than that of female.
 
-2)
+2) INCOME_TYPE
+   
    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/3ce907f7-141c-4c2d-9170-6ecb709451ff)
 
 - It is least risky for the bank to give loan to businessman and students(0 default rate).
@@ -105,7 +106,8 @@ greatly increases in maternity period. Although, they have very low count as com
 - The people who are unemployed have the second highest default rate
 
 
-3)
+3) EDUCATION_TYPE
+   
    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/9e8b4f42-5847-47c4-9947-d3033e09c56b)
 
 
@@ -115,7 +117,8 @@ greatly increases in maternity period. Although, they have very low count as com
 • To reduce the default rate, bank should focus on Incomplete higher, Lower secondary & secondary/secondary special category 
 customers as they have defaulting rate above avg(approx 8 %)
 
-4)
+4) OCCUPATION
+   
    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/bfc00d3a-b716-42e3-a037-000a10dd0a6e)
 
 Note: (ignoring the Unknown category)
@@ -123,7 +126,8 @@ Note: (ignoring the Unknown category)
 - Laborers contribute to highest count of customers with 10.6 % defaulting rate
 
 
-5)
+5) AGE_CATEGORY
+   
    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/c9aa4a20-1cad-4256-a602-a270eca898bf)
 
 * As age increases the possibility of defaulting decreases.
@@ -133,9 +137,106 @@ Note: (ignoring the Unknown category)
 * If we consider 2 categories, middle and young (25-60 years), they contribute to almost 85% of customers and have default rate in range 7 to 10 %. mojority of customers fall under this category.
 * Young and middle age category affects the overall default rate.
 
+6) Default rate in Gender Vs. Housing_type
+
+   ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/ec35989c-a891-4759-8256-50c74d3fa3da)
+
+* Only in Office apartment category, male customers are less likely to default than females.
+* In rest of the categories female customers are morte likely to repay loan.
+
+7) Default rate in credit range Vs. age category
+
+   ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/0a2137bc-12b1-44ac-a85d-814a389207d0)
+
+* It is interesting to observe that Very young customers have higher default rate than other age group customers they have not defaulted in above 2M loan amount. Here, the records to support this statement are below 50, still it is surprising.
+* Above 2M credit category have relatively lower default rate than other categories across all age categories.
+* Senior citizens are most likely to repay loans than any other age category.
+
+8) Default rate in accompanied by and age category
+   
+   ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/775a595e-7de8-4ea7-a5c5-0913c2f9c9b5)
+
+* Senior citizen(above 60 years) who come with group of people are least likely to default and exactly opposite is the case with Very Young customers.
 
 
+9) default rate - Income range vs. education type vs gender
 
+    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/49a0e866-8fed-4699-a11e-fdcc316c1e3e)
+
+* The values in each cell denotes the default percentage.
+* We can say that Males with Salary range between 900K-1M with Secondary/Secaondary special education have highest possibility of defaulting
+* Also Females with salary range between 400-500K with Lower secondary education have highest possibility of defaulting
+
+10) Default rate- Contract type vs housing type
+    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/34f6dbea-aacd-4873-b728-f23064f6d2fe)
+
+11) Default rate- Income vs age category vs gender
+    
+   ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/29029b98-8359-41af-a474-3d3eae22221e)
+
+12) Contract Status Vs. Target (Merged Data)
+   ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/521907c5-7a83-40e1-a348-decba943e845)
+
+- From previously approved loan, it is evident that the customers are least likely to default i.e ~7.5%. Although this
+  category have highest number of customers.
+- The customers whose loan was previously refused have defaulted the most in currently approved loan(~12%) but on
+  the brighter side, 88% are repayers. If we decide to reject on the basis of previous status will lead to 88% business 
+opportunity loss.
+- The customers who were previously eligible for loan but did not take it have around 8% default rate which is fine. But
+  if we want to further reduce the default rate we should always recalculate the eligibility considering the current situation
+  instead of directly passing on the offer in this case
+
+13) Default rate- NAME_CONTRACT_STATUS vs AMT_INCOME_TOTAL
+
+    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/f229d2c4-ec2a-4132-8288-a8126fa60fad)
+
+* The customers who had loan offer but did not take it previously and currently defaulted the loan have higher avg salary than that of repayers. 
+* There is definitly some catch in this case, there is a possibility that bank has offered them the same previous loan offer amount without considering the current situation.
+
+14) Cash Loan Purpose
+    
+    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/8e3d9bd6-1468-42fd-b479-9115296a6a3d)
+
+* Cash Loan taken for buying a garage is most likely to be repaid (6% default) where as the customers who refuse to name the purpose of cash loan are most likely to default(23%).
+
+
+15) Default rate in Goods category
+    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/0a2cabf0-21cb-4fdc-a02c-8db0973abf22)
+
+* Customers who have taken loan for Animals, House Construction, fitness or Tourism are least likely to default around 0 to 4%
+* Customers who have taken loan for Vehicle or Insurance are most likely to default around 10%
+
+16) Default rate - Occupation Vs. Contract Status
+    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/0cd4bb8e-74b1-49c9-867b-9689273a288c)
+
+- IT staff have the highest possibility of defaulting if they have taken unused offer loan which is more than 30%.
+
+17) Default rate in Purpose of Cash loan Vs Contarct Status
+
+    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/64b4058d-f1c5-44fd-9ba3-870dc41dbd5b)
+
+- We can see that the highest possibility of default is in below purpose:
+  1) Money for a third person previously refused loan
+  2) Payment on the other loans previously given offer
+  3) Refusal to name the goal previously approved loan.
+  4) Purchase of Electronic equipmets previously cancelled loan.
+- We can clearly see that first three are that kind of cases where loan offer should be rejected because the default rate is almost 34%.
+- Even in fourth case, we should further drill down to the reason of cancelling the loan and then take decision accordingly.
+
+18) Default rate in Cash Loan Purpose
+    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/7b6bd309-8dff-42b5-a17c-f9282de24bf6)
+- Cash Loan taken for buying a garage is most likely to be repaid (6% default) where as the customers who refuse to name the purpose of cash loan are most likely to default(23%).
+
+  
+19) Default rate - payment type vs contract status
+    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/1a338c49-52e2-48ce-a1d8-aa946618edf8)
+
+- If  a client wants cashless payment for a previous offer which is still unused, then the the client is 34% likely to default on the loan.
+
+20) Default rate Vs Client type
+    ![image](https://github.com/devendra2595/Credit_EDA_Assignment/assets/116253033/0ef3445d-9798-4b7a-a766-2985d083c320)
+
+- New clients are more likely to default than repeat or refreshed clients.
 
 # Recommendations:
 
